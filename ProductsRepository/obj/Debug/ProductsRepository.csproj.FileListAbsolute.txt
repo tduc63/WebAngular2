@@ -1,0 +1,11 @@
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\ProductsRepository.dll.config
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\ProductsRepository.dll
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\ProductsRepository.pdb
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\AutoMapper.dll
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\EntityFramework.dll
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\AutoMapper.xml
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\EntityFramework.xml
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\obj\Debug\ProductsRepository.dll
+C:\Users\Dave\Documents\Visual Studio 2017\Projects\WebAngular2\ProductsRepository\obj\Debug\ProductsRepository.pdb

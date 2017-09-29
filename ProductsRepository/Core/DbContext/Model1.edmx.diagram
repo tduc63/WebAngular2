@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="edea4309622c43a2a5e7c358fd30aa3d" Name="Diagram1">
+        <EntityTypeShape EntityType="Serene1_Northwind_v1Model.Category" Width="1.5" PointX="0.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Serene1_Northwind_v1Model.Customer" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Serene1_Northwind_v1Model.Employee" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Serene1_Northwind_v1Model.Order_Detail" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Serene1_Northwind_v1Model.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Serene1_Northwind_v1Model.Product" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <AssociationConnector Association="Serene1_Northwind_v1Model.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="Serene1_Northwind_v1Model.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="Serene1_Northwind_v1Model.FK_Employees_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="Serene1_Northwind_v1Model.FK_Orders_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="Serene1_Northwind_v1Model.FK_Order_Details_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="Serene1_Northwind_v1Model.FK_Order_Details_Products" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

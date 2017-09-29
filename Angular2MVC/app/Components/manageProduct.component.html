@@ -1,0 +1,154 @@
+﻿<form novalidate (ngSubmit)="onSubmit(ProductFrm)" [formGroup]="ProductFrm">
+    <div>
+        <h1 md-dialog-title><span><md-icon>create</md-icon>{{modalTitle}}</span></h1>
+    </div>
+    <div style="padding-bottom:1px;background-color:#d8d8d8"></div>
+    <div md-dialog-content class="md-dialog-container">
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="Product Name" formControlName="ProductName">
+            </md-input-container>
+            <div *ngIf="formErrors.ProductName" class="text-danger">
+                {{ formErrors.ProductName }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="Supplier ID" formControlName="SupplierID">
+            </md-input-container>
+            <div *ngIf="formErrors.SupplierID" class="text-danger">
+                {{ formErrors.SupplierID }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="Category ID" formControlName="CategoryID">
+            </md-input-container>
+            <div *ngIf="formErrors.CategoryID" class="text-danger">
+                {{ formErrors.CategoryID }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="Quantity-Per-Unit" formControlName="QuantityPerUnit">
+            </md-input-container>
+            <div *ngIf="formErrors.QuantityPerUnit" class="text-danger">
+                {{ formErrors.QuantityPerUnit }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="UnitPrice" formControlName="UnitPrice">
+            </md-input-container>
+            <div *ngIf="formErrors.UnitPrice" class="text-danger">
+                {{ formErrors.UnitPrice }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="UnitsInStock" formControlName="UnitsInStock">
+            </md-input-container>
+            <div *ngIf="formErrors.UnitsInStock" class="text-danger">
+                {{ formErrors.UnitsInStock }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="UnitsOnOrder" formControlName="UnitsOnOrder">
+            </md-input-container>
+            <div *ngIf="formErrors.UnitsOnOrder" class="text-danger">
+                {{ formErrors.UnitsOnOrder }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="ReorderLevel" formControlName="ReorderLevel">
+            </md-input-container>
+            <div *ngIf="formErrors.ReorderLevel" class="text-danger">
+                {{ formErrors.ReorderLevel }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+
+                <md-checkbox placeholder="Discontinued" formControlName="Discontinued"></md-checkbox>
+
+            <div *ngIf="formErrors.Discontinued" class="text-danger">
+                {{ formErrors.Discontinued }}
+            </div>
+        </div>
+        <div class="frm-ctrl">
+            <md-input-container>
+                <input mdInput placeholder="ProductImage" formControlName="ProductImage">
+            </md-input-container>
+            <div *ngIf="formErrors.ProductImage" class="text-danger">
+                {{ formErrors.ProductImage }}
+            </div>
+        </div>
+        <!--<div class="frm-ctrl">
+          <md-radio-group formControlName="ReorderLevel">
+            <md-radio-button *ngFor="let gndr of gender" [value]="ReorderLevel">
+              {{gndr}}
+            </md-radio-button>
+          </md-radio-group>
+          <div *ngIf="formErrors.Gender" class="text-danger">
+            {{ formErrors.Gender }}
+          </div>
+        </div>
+        <div class="frm-ctrl">
+          <md-input-container style="width:50%">
+            <input mdInput [mdDatepicker]="picker" placeholder="Date of Birth" formControlName="DOB">
+            <button mdSuffix [mdDatepickerToggle]="picker"></button>
+          </md-input-container>
+          <md-datepicker #picker></md-datepicker>
+          <div *ngIf="formErrors.DOB" class="text-danger">
+            {{ formErrors.DOB }}
+          </div>
+        </div>
+        <div class="frm-ctrl">
+          <div class="line_ctrl">
+            <md-input-container class="example-full-width">
+              <input mdInput placeholder="City" formControlName="City">
+            </md-input-container>
+            <div *ngIf="formErrors.City" class="text-danger">
+              {{ formErrors.City }}
+            </div>
+          </div>
+          <div class="line_ctrl">
+            <md-input-container>
+              <input mdInput placeholder="State" [mdAutocomplete]="auto" formControlName="State">
+            </md-input-container>
+            <md-autocomplete #auto="mdAutocomplete">
+              <md-option *ngFor="let state of filteredStates | async" [value]="state">
+                {{ state }}
+              </md-option>
+            </md-autocomplete>
+            <div *ngIf="formErrors.State" class="text-danger">
+              {{ formErrors.State }}
+            </div>
+          </div>
+          <div class="line_ctrl">
+            <md-input-container class="example-full-width">
+              <input mdInput #postalCode maxlength="5" placeholder="Zip" formControlName="Zip">
+              <md-hint align="end">{{postalCode.value.length}} / 5</md-hint>
+            </md-input-container>
+            <div *ngIf="formErrors.Zip" class="text-danger">
+              {{ formErrors.Zip }}
+            </div>
+          </div>
+        </div>
+        <div class="frm-ctrl">
+          <md-select placeholder="Country" style="width:50%" formControlName="Country">
+            <md-option *ngFor="let ctry of country" [value]="ctry.value">
+              {{ ctry.viewValue }}
+            </md-option>
+          </md-select>
+          <div *ngIf="formErrors.Country" class="text-danger">
+            {{ formErrors.Country }}
+          </div>
+        </div>-->
+    </div>
+    <md-dialog-actions class="md-dialog-footer" align="end">
+        <button color="warn" type="button" md-raised-button (click)="dialogRef.close()">Cancel</button>&nbsp;
+        <button type="submit" color="primary" [disabled]="!ProductFrm.invalid" md-raised-button>{{modalBtnTitle}}</button>
+    </md-dialog-actions>
+</form>
